@@ -1,3 +1,7 @@
+# Note
+Edit and rebuild of #react-native-multiple-select-list(https://github.com/ataomega/react-native-multiple-select-list)
+Thanks for author
+
 # react-native-multiple-select-list
 Multiple select list with search bar
 
