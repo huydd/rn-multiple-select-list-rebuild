@@ -53,7 +53,7 @@ const userList = {
 | placeholder | String | placeholder text for search bar |
 | placeholderTextColor | String | placeholder text color for search bar |
 | reminderSearch | String | reminder search |
-| isOption | String | panel more option |
+| isOption | Boolean | panel more option |
 | returnValue | String | should it return keys of selected options or values? |
 | callback | Function | whenever user selects or changes selections it will be called. |
 | rowBackgroundColor | String | background color for each row in list |
