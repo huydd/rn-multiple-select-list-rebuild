@@ -20,13 +20,15 @@ const userList = {
 }
 
 <CustomMultiPicker
-  options={userList}
+  options={this.props.data}
   search={true} // should show search bar?
   multiple={true} //
   placeholder={"Search"}
+  reminderSearch={"Search để có dữ liệu"}
   placeholderTextColor={'#757575'}
-  returnValue={"label"} // label or value
-  callback={(res)=>{ console.log(res) }} // callback, array of selected items
+  returnValue={"value"} // label or value
+  isOption={true} // show panel option
+  callback={(res) => this.setState({ dataSelected: res })}
   rowBackgroundColor={"#eee"}
   rowHeight={40}
   rowRadius={5}
@@ -34,8 +36,8 @@ const userList = {
   iconSize={30}
   selectedIconName={"ios-checkmark-circle-outline"}
   unselectedIconName={"ios-radio-button-off-outline"}
-  scrollViewHeight={130}
-  selected={[1,2]} // list of options which are selected by default
+  scrollViewHeight={'100%'}
+  selected={this.state.selected}
 />
 ```
 
@@ -50,6 +52,8 @@ const userList = {
 | multiple | Boolean | if user can select multiple options or not. if you select an item which is already selected, it will be unselected. if multiple is disabled, it will work like radio buttons. |
 | placeholder | String | placeholder text for search bar |
 | placeholderTextColor | String | placeholder text color for search bar |
+| reminderSearch | String | reminder search |
+| isOption | String | panel more option |
 | returnValue | String | should it return keys of selected options or values? |
 | callback | Function | whenever user selects or changes selections it will be called. |
 | rowBackgroundColor | String | background color for each row in list |
@@ -63,6 +67,6 @@ const userList = {
 | selected | Object | list of options which are selected by default |
 
 ### Author:
-Ata S.Mohammadi.
-ataomega@gmail.com
+stock source: ataomega@gmail.com
+re-change: damdinhhuy@gmail.com
 # rn-multiple-select-list-rebuild
