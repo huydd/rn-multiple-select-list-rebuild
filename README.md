@@ -7,7 +7,7 @@ Multiple select list with search bar
 
 ### Install :
 ```sh
-npm install --save react-native-multiple-select-list
+npm install --save react-native-multiple-select-list-rebuild
 ```
 ### Example usage :
 ```javascript
